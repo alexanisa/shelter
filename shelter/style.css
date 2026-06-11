@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -10,17 +11,12 @@ a {
 .body__wrapper {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    max-width: 128rem;
-    min-width: 128rem;
     margin: 0 auto;
 }
 
 .container {
     margin: 0 auto;
-    background-image: url(./images/start-screen-gradient-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    background: radial-gradient(ellipse at 0% 0%, #5B483A 0%, #262425 100%);
     }
 
 .header__wrapper {
@@ -29,6 +25,7 @@ a {
     align-items: center;
     margin: 0 auto;
     padding: 3rem 4rem 0;
+    width: 128rem;
 }
 
 .header__logo {
@@ -71,17 +68,18 @@ a {
 .navigation__link--active{
     color: #FAFAFA;
     border-bottom: 3px solid #F1CDB3;
+    cursor: default;
+    pointer-events: none;
 }
 
 .not-only {
-    min-height: 72.8rem;
     background-image: url(./images/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-size: 69.8rem 72.8rem;
-    background-position: right;
+    background-position:  93% 50%;
+    margin: 0 auto;
     margin-top: 9rem;
-    margin-right: 4rem;
-
+    width: 128rem;
 }
 
 .not-only__container {
@@ -167,6 +165,7 @@ a {
 
 .our-friends {
     background-color: #F6F6F6;
+    width: 100%;
 }
 
 .our-friends__container {
@@ -232,6 +231,21 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.slider__card:hover,
+.our-friends__card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.slider__card:hover .card__btn,
+.our-friends__card:hover .card__btn {
+    cursor: pointer;
+    background-color: #FDDCC4;
+    transition: all 0.3s ease;
 }
 
 .card__image {
@@ -401,9 +415,10 @@ a {
 }
 
 .footer {
-    background-image: url(./images/footer-gradient-background.png);
+    background-image: url(./images/footer-back.png);
     background-repeat: no-repeat;
     padding-top: 4rem;
+    margin: 0 auto;
 }
 
 .footer__container {
@@ -507,12 +522,13 @@ a {
 }
 
 .not-only__container-btn:hover,
-.card__btn:hover,
 .our-friends__container-btn:hover,
 .slider__arrow-left:hover,
-.slider__arrow-right:hover {
+.slider__arrow-right:hover,
+.pagination__btn:hover {
     cursor: pointer;
     background-color: #FDDCC4;
+    transition: all 0.3s ease;
 }
 
 /* OUR PETS*/
@@ -586,6 +602,16 @@ a {
     color: #CDCDCD;
 }
 
+.pagination__btn:disabled:hover {
+    background-color: inherit;
+}
+
+
 .pagination__btn--active {
     background-color: #F1CDB3;
+}
+
+.pagination__btn--active:hover {
+    background-color: #F1CDB3;
+    cursor: default;
 }
