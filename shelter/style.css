@@ -6,12 +6,14 @@ html {
 a {
     text-decoration: none;
     color: #FFFFFF;
+    transition: all 0.3s ease;
 }
 
 .body__wrapper {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .container {
@@ -132,6 +134,7 @@ a {
     justify-content: center;
     gap: 12rem;
     margin-bottom: 10rem;
+    width: 128rem;
 }
 
 .about__pets {
@@ -176,6 +179,7 @@ a {
     gap: 6rem;
     max-width: 120rem;
     margin: 0 auto;
+    width: 128rem;
 
 }
 
@@ -245,7 +249,7 @@ a {
 .our-friends__card:hover .card__btn {
     cursor: pointer;
     background-color: #FDDCC4;
-    transition: all 0.3s ease;
+    border-color: #FDDCC4;
 }
 
 .card__image {
@@ -275,6 +279,7 @@ a {
     font-weight: 400;
     margin: 3.2rem auto;
     background-color: inherit;
+    transition: all 0.3s ease;
 }
 
 .our-friends__container-btn {
@@ -297,6 +302,7 @@ a {
     align-items: center;
     margin: 8rem auto 10rem;
     max-width: 120rem;
+    width: 128rem;
 }
 
 .help__title {
@@ -351,6 +357,7 @@ a {
     gap: 3rem;
     justify-content: center;
     align-items: center;
+    width: 128rem;
 }
 
 .in-addition__content {
@@ -415,10 +422,9 @@ a {
 }
 
 .footer {
-    background-image: url(./images/footer-back.png);
-    background-repeat: no-repeat;
     padding-top: 4rem;
     margin: 0 auto;
+    background: radial-gradient(ellipse at 0% 0%, #5B483A 0%, #262425 100%);
 }
 
 .footer__container {
@@ -428,6 +434,7 @@ a {
     justify-content: center;
     align-items: flex-start;
     margin: 0 auto;
+    width: 128rem;
 }
 
 .footer__contacts{
@@ -528,7 +535,7 @@ a {
 .pagination__btn:hover {
     cursor: pointer;
     background-color: #FDDCC4;
-    transition: all 0.3s ease;
+    border-color: #FDDCC4;
 }
 
 /* OUR PETS*/
@@ -594,6 +601,7 @@ a {
     border: 2px solid #F1CDB3;
     background-color: inherit;
     padding: 0;
+    transition: all 0.3s ease;
 }
 
 .pagination__btn:disabled {
