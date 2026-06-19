@@ -734,7 +734,7 @@ a {
 
 @media (max-width: 768px) {
     .header__wrapper {
-        padding: 3rem 0 0 1rem;
+        padding: 3rem 1rem 0 1rem;
         max-width: 70.8rem;
 
     }
@@ -752,19 +752,21 @@ a {
         height: 59.3rem;
         margin: 0 auto;
         margin-left: 17rem;
+        max-width: 100%;
 
     }
 
     .not-only__container {
         display: flex;
         flex-direction: column;
-        max-width: 46rem;
+        max-width: 47rem;
         margin: 0 auto;
         gap: 4.2rem;
         padding: 0;
         padding-left: 1rem;
 
     }
+
 
 
     .not-only__container-btn {
@@ -787,8 +789,8 @@ a {
     .our-friends__container {
         gap: 6rem;
         margin: 0 auto;
+        padding-left: 5rem;
         max-width: 76.8rem;
-        padding-left: 1.2rem;
     }
 
 
@@ -807,6 +809,7 @@ a {
     .slider__arrows {
         max-width: 70.8rem;
         left: 3rem;
+        gap: 60rem;
     }
 
 
@@ -818,6 +821,7 @@ a {
     .help__container {
         max-width: 76.8rem;
         padding-left: 1rem;
+        margin-bottom: 9rem;
     }
 
     .help__list {
@@ -836,13 +840,24 @@ a {
         gap: 6rem;
         width: 100%;
         padding-left: 1rem;
+        padding-top: 8.5rem;
     }
     .in-addition {
-        padding-bottom: 9.5rem;
+        padding-bottom: 10rem;
+    }
+
+    .in-addition__title {
+        font-size: 3.5rem;
+        max-width: 29rem;
+    }
+
+    .in-addition__img {
+        max-width: 100%;
+        margin-left: 5rem;
     }
 
     .footer {
-        padding-top: 1.5rem;
+        padding-top: 1.2rem;
     }
 
     .footer__container {
@@ -850,6 +865,31 @@ a {
         gap: 6.5rem;
         width: 100%;
         flex-wrap: wrap;
+    }
+
+    .footer__contacts {
+        max-width: 29rem;
+        padding-left: 1rem;
+    }
+
+    .footer__location {
+        max-width: 30.2rem;
+    }
+
+    .footer__title {
+        font-size: 3.5rem;
+    }
+
+    .footer__contacts-list {
+        margin-left: 1rem;
+    }
+
+    .footer__link {
+        font-size: 2rem;
+    }
+
+    .footer__link--location {
+        padding-left: 4rem;
     }
 
     .our-friends__container.pets {
@@ -862,11 +902,150 @@ a {
     }
 
     .our-friend__pagination {
-        margin: 2.5rem auto;
-        padding-bottom: 5rem;
+        margin: 2.5rem auto 0;
+        padding-bottom: 7.5rem;
     }
 
+}
 
+@media (max-width:661px) {
+    .navigation {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 3rem;
+        width: 100%;
+
+    }
+    .burger-menu__line {
+        display: block;
+        height: 0.2rem;
+        background-color: #F1CDB3;
+        padding: 0;
+    }
+
+    .burger-menu__line.dark {
+        background-color: #000000;
+    }
+
+    .not-only {
+        flex-direction: column;
+        gap: 6rem;
+        padding: 0 2rem;
+        margin-top: 4rem;
+        max-width: 100%;
+    }
+
+    .not-only__container {
+        padding-top: 0;
+        max-width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .not-only__container-title {
+        font-size: 3.2rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .not-only__container-text {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+    }
+
+    .not-only__container-btn {
+        margin: 0 auto;
+        width: 18rem;
+        height: 4.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 10rem;
+    }
+
+    .not-only__img {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about__container {
+        flex-direction: column-reverse;
+        gap: 5rem;
+        padding: 0 2rem;
+        max-width: 100%;
+        margin: 5rem auto;
+    }
+
+    .about__title {
+        font-size: 2.8rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .about__text {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .about__pets {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .our-friends__container {
+        padding: 0 2rem;
+        max-width: 100%;
+    }
+
+    .our-friends__title {
+        font-size: 2.8rem;
+        max-width: 100%;
+    }
+
+    .our-friends__slider {
+        flex-direction: column-reverse;
+        gap: 3rem;
+        max-width: 100%;
+    }
+
+    .slider__cards {
+        gap: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slider__card {
+        max-width: 27rem;
+    }
+    .slider__card:nth-child(2),
+    .slider__card:nth-child(3) {
+        display: none;
+    }
+
+    .slider__arrows {
+        position: relative;
+        transform: translateY(0);
+        max-width: 100%;
+        gap: 4rem;
+        justify-content: center;
+        left: 0;
+    }
+
+    .slider__arrow-left,
+    .slider__arrow-right {
+        width: 4.8rem;
+        height: 4.8rem;
+        position: static;
+    }
+
+    .our-friends__container-btn {
+        margin-bottom: 5rem;
+    }
 }
 
 @media (max-width: 320px) {
@@ -895,13 +1074,16 @@ a {
 
     .header__wrapper {
         padding-top: 3rem;
+        padding-right: 0;
         max-width: 28rem;
 
     }
 
     .not-only {
         max-width: 32rem;
-        gap: 10.5rem;
+        gap: 0.5rem;
+        margin-top: 6rem;
+        padding: 0;
     }
 
     .not-only__img {
@@ -926,6 +1108,14 @@ a {
 
     .not-only__container-text {
         text-align: center;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .not-only__container-btn {
+        width: 20.7rem;
+        height: 5.2rem;
+        font-size: 1.7rem;
     }
 
 
@@ -934,6 +1124,7 @@ a {
         gap: 4.2rem;
         max-width: 32rem;
         margin: 4.2rem auto;
+        padding: 0;
     }
 
     .about__content {
@@ -944,36 +1135,45 @@ a {
     .about__title {
         font-size: 2.5rem;
         text-align: center;
-        padding: 0 2rem 0.3rem;
+        padding: 0 2rem;
     }
 
     .about__text  {
         width: 100%;
         max-width: 27rem;
-        margin: 2.2rem 1rem 0 1.5rem;
+        margin: 0 auto;
         text-align: justify;
+        padding-top: 2.8rem;
+        font-size: 1.5rem;
+    }
+
+    .about__text.two {
+        padding-top: 2rem;
     }
 
     .about__pets {
         width: 26rem;
         height: auto;
-        margin-left: 1.2rem;
+        margin: 0 auto;
     }
 
     .our-friends__container {
         gap: 4.2rem;
         max-width: 32rem;
+        padding: 0;
     }
 
     .our-friends__title {
         margin-top: 4.2rem;
         font-size: 2.5rem;
+        margin-left: 1.4rem;
     }
 
 
     .our-friends__slider {
         max-width: 32rem;
         flex-direction: column-reverse;
+        gap: 0;
     }
 
     .our-friends__container-btn {
@@ -996,6 +1196,12 @@ a {
         gap: 8rem;
         justify-content: center;
         transform: translateY(0);
+    }
+
+    .slider__arrow-left,
+    .slider__arrow-right {
+        width: 5.2rem;
+        height: 5.2rem;
     }
     .card__btn {
         margin-bottom: 3rem;
@@ -1041,10 +1247,13 @@ a {
         max-width: 13rem;
     }
 
-
+    .in-addition__content {
+        margin: 0 auto;
+    }
     .in-addition__container {
         max-width: 32rem;
         gap: 4.2rem;
+        padding: 0;
         padding-top: 4.2rem;
     }
     .in-addition {
@@ -1076,6 +1285,7 @@ a {
 
     .in-addition__img {
         width: 26rem;
+        margin: 0 auto;
     }
 
     .in-addition__text {
@@ -1093,8 +1303,10 @@ a {
         gap: 4rem;
         width: 100%;
         flex-wrap: wrap;
+        padding: 0;
         padding-top: 3rem;
         margin: 0 auto;
+
     }
 
     .footer__contacts {
@@ -1123,7 +1335,8 @@ a {
     .footer__location-list {
         margin-top: 3.2rem;
         gap: 4rem;
-
+        max-width: 30rem;
+        width: 100%;
     }
 
     .footer__link {
@@ -1137,6 +1350,7 @@ a {
 
     .footer__image {
         width: 26rem;
+        max-width: 100%;
     }
 
     .our-friends__container.pets {
