@@ -1,4 +1,4 @@
-console.log('SELF-ASSESSMENT SHELTER\n\
+console.log('SELF-ASSESSMENT\n\
 \n\
 MAIN PAGE (70/70):\n\
 - W3C Validation: 10/10\n\
