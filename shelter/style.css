@@ -739,6 +739,10 @@ a {
 
     }
 
+    .header__wrapper.dark {
+        padding-right: 0;
+    }
+
     .not-only {
         margin: 0 auto;
         margin-top: 6rem;
