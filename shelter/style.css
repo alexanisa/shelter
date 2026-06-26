@@ -629,6 +629,10 @@ html.no-scroll {
     padding-bottom: 1.5rem;
 }
 
+.our-friends__cards.pets {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
 .our-friends__card {
     max-width: 27rem;
     background-color: #FAFAFA;
