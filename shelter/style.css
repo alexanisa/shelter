@@ -21,6 +21,26 @@ html.no-scroll {
     overflow: hidden;
 }
 
+.overlay {
+        position: fixed;
+        background-color:#29292999;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+        display: none;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+}
+
 .container {
     margin: 0 auto;
     background: radial-gradient(ellipse at 0% 0%, #5B483A 0%, #262425 100%);
@@ -250,6 +270,7 @@ html.no-scroll {
     margin: 0 auto;
     order: 1;
     flex: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .slider__arrows {
@@ -262,6 +283,7 @@ html.no-scroll {
     top: 50%;
     transform: translateY(-30%);
     left: 0.5rem;
+    padding: 0 2rem;
 }
 
 
@@ -274,6 +296,7 @@ html.no-scroll {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .slider__card:hover,
@@ -289,6 +312,11 @@ html.no-scroll {
     cursor: pointer;
     background-color: #FDDCC4;
     border-color: #FDDCC4;
+}
+
+
+.slider-wrapper {
+    margin:  0 auto;
 }
 
 .card__image {
@@ -690,7 +718,7 @@ html.no-scroll {
         margin: 0 auto;
         left: 0;
         justify-content: center;
-        gap: 65rem;
+        gap: 61rem;
     }
 
     .in-addition__container {
@@ -778,23 +806,7 @@ html.no-scroll {
     .burger-menu.active {
         transform: rotate(90deg);
     }
-    .overlay {
-        position: fixed;
-        background-color:#29292999;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        z-index: 999;
-    }
 
-    .overlay.active {
-        opacity: 1;
-        visibility: visible;
-}
 
     .mobile-menu {
         position: fixed;
@@ -915,7 +927,7 @@ html.no-scroll {
     .slider__arrows {
         max-width: 70.8rem;
         left: 3rem;
-        gap: 60rem;
+        gap: 40rem;
     }
 
 
@@ -1092,7 +1104,7 @@ html.no-scroll {
     }
 
     .our-friends__slider {
-        flex-direction: column-reverse;
+        flex-direction: column;
         gap: 3rem;
         max-width: 100%;
     }
