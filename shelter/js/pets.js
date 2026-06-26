@@ -79,6 +79,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         petCard.append(img, title, btn);
 
+        petCard.addEventListener('click', function() {
+            if (window.openModal) {
+                window.openModal(pet.id);
+            }
+        });
+
         return petCard;
     }
 

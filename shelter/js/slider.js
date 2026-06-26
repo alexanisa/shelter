@@ -61,6 +61,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         sliderCard.append(img, title, btn);
 
+        sliderCard.addEventListener('click', function() {
+            if (window.openModal) {
+                window.openModal(pet.id);
+            }
+        });
+
         return sliderCard;
     }
 
