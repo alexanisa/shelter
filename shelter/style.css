@@ -741,6 +741,7 @@ html.no-scroll {
     letter-spacing: 6%;
     color: #000000;
     margin-top: 5rem;
+    padding-right: 2rem;
 }
 
 .modal-pet-info h3{
@@ -807,9 +808,9 @@ html.no-scroll {
 }
 
 .modal-close {
-    position: fixed;
-    top: 10.5rem;
-    right: 13.8rem;
+    position: absolute;
+    top: -5.5rem;
+    right: -5.2rem;
     width: 5.2rem;
     height: 5.2rem;
     border: 0.2rem solid #F1CDB3;
@@ -820,6 +821,10 @@ html.no-scroll {
     border-radius: 50%;
     cursor: pointer;
     z-index: 2001;
+}
+
+.modal-wrapper {
+    position: relative;
 }
 
 @media (max-width:1024px) {
@@ -904,6 +909,54 @@ html.no-scroll {
     .footer__image {
         max-width: 60%;
         height: auto;
+    }
+
+    .modal-content {
+        max-width: 63rem;
+        width: 100%;
+        max-height: 35rem;
+    }
+
+    .modal-body {
+        width: 100%;
+    }
+
+    .modal-pet {
+        gap: 1.1rem;
+    }
+
+
+    .modal-pet-image img {
+        width: 40rem;
+
+
+    }
+
+    .modal-pet-info {
+        margin-top: 1rem;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .pet-type {
+        margin-bottom: 2rem;
+    }
+
+
+    .pet-description {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        max-width: 29rem;
+    }
+
+
+
+    .modal-close {
+        top: -5.5rem;
+        right: -4.2rem;
+    }
+    .modal-details {
+        margin-bottom: 2rem;
     }
 }
 
@@ -1163,6 +1216,7 @@ html.no-scroll {
         padding-bottom: 7.5rem;
     }
 
+
 }
 
 @media (max-width:661px) {
@@ -1280,6 +1334,40 @@ html.no-scroll {
 
     .our-friends__container-btn {
         margin-bottom: 5rem;
+    }
+
+
+    .modal-content {
+        max-width: 27rem;
+        width: 100%;
+        max-height: 39.3rem;
+    }
+
+    .modal-body {
+        width: 100%;
+    }
+
+    .modal-pet {
+        gap: 0;
+    }
+
+
+    .modal-pet-image img {
+        display: none;
+
+
+    }
+
+    .modal-pet-info {
+        max-width: 22rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+
+
+    .pet-description {
+        text-align: start;
     }
 }
 
